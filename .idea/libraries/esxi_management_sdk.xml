@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="esxi-management-sdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../vsphere-automation-sdk-java-master/classes/artifacts/esxi_management_sdk_jar/esxi-management-sdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

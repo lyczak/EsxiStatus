@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>PerfChartServlet</servlet-name>
+        <servlet-class>ga.gaba.EsxiStatus.servlets.PerfChartServlet</servlet-class>
+        <init-param>
+            <param-name>plotablePerfCounters</param-name>
+            <param-value>4,CPU Usage,GHz,1E-3;65610,Memory Usage,GB,9.53674316E-7</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PerfChartServlet</servlet-name>
+        <url-pattern>/PerfChart.png</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>VmPowerServlet</servlet-name>
+        <servlet-class>ga.gaba.EsxiStatus.servlets.VmPowerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VmPowerServlet</servlet-name>
+        <url-pattern>/power.do</url-pattern>
+    </servlet-mapping>
+</web-app>
